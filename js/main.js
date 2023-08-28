@@ -36,14 +36,10 @@ const inputCheck = () => {
 	if (input.value !== '' && input.value.slice(-1) === '?') {
 		generateAnswer();
 		error.textContent = '';
-
-		console.log('ok');
 	} else if (input.value !== '' && input.value.slice(-1) !== '?') {
-		console.log('not ok');
 		error.textContent = 'Zakończ swoje pytanie znakiem "?"';
 		answer.textContent = '';
 	} else if (input.value === '') {
-		console.log('not ok');
 		error.textContent = 'Najpierw zadaj pytanie.';
 		answer.textContent = '';
 	}
